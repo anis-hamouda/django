@@ -1,0 +1,51 @@
+h1{
+    text-align:center;
+}
+.content{
+    margin   : 0 auto;
+    max-width: 400px;
+    text-align:center;
+}
+
+form {
+    margin   : 0 auto;
+    max-width: 400px;
+
+}
+
+form div {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    align-items:center;
+   
+}
+
+/* form div > * {
+     border: 1px solid red;
+}  */
+
+form input {
+    padding  : 5px;
+    font-size: 14px;
+}
+
+form button {
+    grid-column: 2;
+    /* grid-column: span 1; */
+    padding: 10px;
+    background-color: #098cd2;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form p{
+    grid-column: 2;
+    color: rgb(234, 7, 7);
+
+}
+
+form button:hover {
+    background-color: #e00808;
+}

@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 10px;
+}
+
+iframe{
+    margin   : 0 auto;
+    max-width: 400px;
+    width: 390px;
+    height:300px;
+}
+
+.content {
+    margin   : 0 auto;
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1px;
+    align-items: center;
+}
+
+
+/* .content > * {
+    border: 1px solid red;
+} */
+
+
+
+.content > div:nth-child(1) {
+    grid-column: span 2;
+    background-color: lightblue;
+}
+
+.content > div:nth-child(2) {
+    grid-column: span 2;
+
+}
+
+.content > div:nth-child(3) {
+    grid-column: span 2;
+    
+    display: flex;
+    justify-content: center; /* Centré horizontalement */
+    align-items: center; /* Centré verticalement */
+}
+
+.content > div:nth-child(4) {
+    grid-column: span 2;
+
+
+}
+
+
+h1 {
+    color: #333;
+}
+
+.content_cmd {
+    margin   : 0 auto;
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    align-items: center;
+}
+
+/* .content_cmd > * {
+    border: 1px solid rgb(0, 38, 255);
+} */
+
+.content_cmd > div:nth-child(1) {
+    grid-column: span 2;
+    background-color: rgb(214, 214, 214);
+}
+
+.content_cmd > div:nth-child(2) {
+    grid-column: span 2;
+    background-color: rgb(214, 214, 214);
+    height: 200px;
+    display: flex;
+    justify-content: center; /* Centré horizontalement */
+    align-items: center; /* Centré verticalement */
+}
+
+.content_cmd > div:nth-child(3) {
+
+    grid-column: span 2;
+    background-color: rgb(227, 227, 227);
+    height: 50px;
+
+    display: flex;
+    justify-content: center; /* Centré horizontalement */
+    align-items: center; /* Centré verticalement */
+}
+
+
+
+.button-container{
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 1px;
+}
+.button.up{
+    grid-column:2
+}
+.button.left{
+    margin-left:auto;
+    width: 100px;
+    grid-column:1
+}
+.button.middle{
+    grid-column:2
+}
+.button.right{
+    margin-right:auto;
+    width: 100px;
+    grid-column:3
+}
+.button.down{
+    grid-column:2
+}
+
+
+button{
+    height: 50px;
+}
+
+
+
+/* Style du menu principal */
+.menu {
+    background-color: #333; /* Couleur de fond */
+}
+
+.menu ul {
+    list-style-type: none; /* Retire les puces des éléments de la liste */
+    margin : 0; /* Pas de marge */
+    padding: 0; /* Pas de padding */
+    display: flex; /* Aligne les éléments en ligne */
+    
+}
+.menu ul li {
+    margin-right: 20px; /* Espacement entre les items */
+}
+a{
+    color: aliceblue;
+}
+
+
+

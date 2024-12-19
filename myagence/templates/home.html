@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="{% static '/css/home/styles.css' %}">
+</head>
+<body>
+    <div class="content">
+        <div><h0>Bienvenue sur mon premier projet Django !</h0></div>
+        <div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="{% url 'home'     %}">home</a></li>
+                    <li><a href="{% url 'robot'    %}">robot</a></li>
+                    <li><a href="{% url 'bras'     %}">bras</a></li>
+                    <li><a href="{% url 'config'    %}">config</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div><iframe src="URL_DE_LA_PAGE" ></iframe></div>
+        <div>
+            <div id="dynamic-content">
+                {% block content %}
+                <!-- Le contenu dynamique sera inséré ici -->
+                {% endblock %}
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+</html>
